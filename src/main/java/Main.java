@@ -1,6 +1,7 @@
 import model.Student;
 import model.StudyProfile;
 import model.University;
+import model.comparators.ComparatorUStudyProfile;
 
 public class Main {
 
@@ -9,6 +10,5 @@ public class Main {
         Student student = new Student("full", "0", 1, 5);
         System.out.println(university+ "\n"
         + student);
-
     }
 }
