@@ -1,4 +1,4 @@
-package model.comparators;
+package comparators;
 
 public class ComparatorSCurrentCourseNumber implements StudentComparator{
     @Override

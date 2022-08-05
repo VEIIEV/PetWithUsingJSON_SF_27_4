@@ -1,4 +1,4 @@
-package model.comparators;
+package comparators;
 
 import org.apache.commons.lang3.StringUtils;
 

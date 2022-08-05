@@ -1,4 +1,4 @@
-package model.comparators;
+package comparators;
 
 public class ComparatorSAvgExamScore implements StudentComparator{
     @Override

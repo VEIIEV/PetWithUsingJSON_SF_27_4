@@ -1,6 +1,6 @@
-package model.comparators;
+package comparators;
 
-import model.StudyProfile;
+import enums.StudyProfile;
 
 public class ComparatorUStudyProfile implements UniversityComparator {
     @Override

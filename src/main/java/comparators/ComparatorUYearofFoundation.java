@@ -1,6 +1,4 @@
-package model.comparators;
-
-import org.apache.commons.lang3.StringUtils;
+package comparators;
 
 public class ComparatorUYearofFoundation implements UniversityComparator {
     @Override

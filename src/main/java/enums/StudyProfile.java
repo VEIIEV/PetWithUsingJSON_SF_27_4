@@ -1,4 +1,4 @@
-package model;
+package enums;
 
 public enum StudyProfile {
 
@@ -7,6 +7,9 @@ public enum StudyProfile {
     LAW("Законодательство"),
     INFORMATIONSYSTEMS("информационные системы"),
     BUSINESS("бизнес"),
+    PHYSICS("физика"),
+    LINGUISTICS("лингвистика"),
+    MATHEMATICS("математика"),
     ART("искусство");
 
 
