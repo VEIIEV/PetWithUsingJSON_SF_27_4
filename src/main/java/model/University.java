@@ -1,13 +1,19 @@
 package model;
 
+import com.google.gson.annotations.SerializedName;
 import enums.StudyProfile;
 
 public class University {
 
+    @SerializedName("идентификатор")
     private String id;
+    @SerializedName("Полное название")
     private String fullName;
+    @SerializedName("сокращённое название")
     private String shortName;
+    @SerializedName("год основания")
     private int yearOfFoundation;
+    @SerializedName("направленность")
     private StudyProfile mainProfile;
 
     public static class UniversityBuilder {
