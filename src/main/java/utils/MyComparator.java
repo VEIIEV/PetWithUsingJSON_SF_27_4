@@ -1,5 +1,6 @@
-package comparators;
+package utils;
 
+import comparators.*;
 import enums.SComparatorList;
 import enums.UComparatorList;
 

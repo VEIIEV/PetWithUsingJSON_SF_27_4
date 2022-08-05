@@ -1,4 +1,4 @@
-import comparators.MyComparator;
+import utils.MyComparator;
 import comparators.StudentComparator;
 import comparators.UniversityComparator;
 import enums.SComparatorList;

@@ -2,7 +2,7 @@ import enums.SComparatorList;
 import model.Student;
 import enums.StudyProfile;
 import model.University;
-import comparators.MyComparator;
+import utils.MyComparator;
 
 public class Main {
 //В методе main реализовать получение компаратора по типу (вызов метода утилитного класса).
