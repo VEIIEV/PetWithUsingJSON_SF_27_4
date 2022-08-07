@@ -1,5 +1,7 @@
-import utils.JsonUtil;
-import utils.MyComparator;
+import io.XlsWriter;
+import model.Statistics;
+import utils.AnalyserUtil;
+import utils.MyComparatorUtil;
 import comparators.StudentComparator;
 import comparators.UniversityComparator;
 import enums.SComparatorList;
@@ -11,9 +13,11 @@ import model.University;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class Boot {
+
+    static final String endExcelFile= "src/main/resources/StatisticsInfo.xlsx";
+
     //В методе main реализовать получение компаратора по типу (вызов метода утилитного класса).
     // Сохранить полученные значения (то есть экземпляры компараторов) в переменные с типом интерфейса компаратора
     // (аналогично тому, как в коллекциях делается List<T> someList = new ArrayList()).
@@ -24,11 +28,11 @@ public class Boot {
         //comparator list creation
         List<UniversityComparator> universityComparators = new ArrayList<>();
 
-        universityComparators.add(MyComparator.getMyComparator(UComparatorList.FULLNAME));
-        universityComparators.add(MyComparator.getMyComparator(UComparatorList.SHORTNAME));
-        universityComparators.add(MyComparator.getMyComparator(UComparatorList.ID));
-        universityComparators.add(MyComparator.getMyComparator(UComparatorList.STUDYPROFILE));
-        universityComparators.add(MyComparator.getMyComparator(UComparatorList.YEAROFFOUNDATION));
+        universityComparators.add(MyComparatorUtil.getMyComparator(UComparatorList.FULLNAME));
+        universityComparators.add(MyComparatorUtil.getMyComparator(UComparatorList.SHORTNAME));
+        universityComparators.add(MyComparatorUtil.getMyComparator(UComparatorList.ID));
+        universityComparators.add(MyComparatorUtil.getMyComparator(UComparatorList.STUDYPROFILE));
+        universityComparators.add(MyComparatorUtil.getMyComparator(UComparatorList.YEAROFFOUNDATION));
         //write in param
         List<University> universities =
                 XlsReader.readXlsUniversities("src/main/resources/universityInfo.xlsx");
@@ -39,10 +43,10 @@ public class Boot {
 
         ////comparator list creation
         List<StudentComparator> studentComparators = new ArrayList<>();
-        studentComparators.add(MyComparator.getMyComparator(SComparatorList.FULLNAME));
-        studentComparators.add(MyComparator.getMyComparator(SComparatorList.AVGEXAMSCORE));
-        studentComparators.add(MyComparator.getMyComparator(SComparatorList.CURRENTCOURSENUMBER));
-        studentComparators.add(MyComparator.getMyComparator(SComparatorList.UNIVERSITYID));
+        studentComparators.add(MyComparatorUtil.getMyComparator(SComparatorList.FULLNAME));
+        studentComparators.add(MyComparatorUtil.getMyComparator(SComparatorList.AVGEXAMSCORE));
+        studentComparators.add(MyComparatorUtil.getMyComparator(SComparatorList.CURRENTCOURSENUMBER));
+        studentComparators.add(MyComparatorUtil.getMyComparator(SComparatorList.UNIVERSITYID));
 
         //write in param
         List<Student> students =
@@ -67,18 +71,21 @@ public class Boot {
 
 
         //executing 7-10 tasks
-        students = students.stream().map((p) -> JsonUtil.SingleToJson(p)).
-                peek(System.out::println).
-                map((p) -> JsonUtil.SingleFromJson(p, new Student())).
-                peek(System.out::println).
-                collect(Collectors.toList());
+   //     students = students.stream().map((p) -> JsonUtil.SingleToJson(p)).
+   //             peek(System.out::println).
+   //             map((p) -> JsonUtil.SingleFromJson(p, new Student())).
+   //             peek(System.out::println).
+   //             collect(Collectors.toList());
+//
+   //     universities = universities.stream().map((p) -> JsonUtil.SingleToJson(p)).
+   //             peek(System.out::println).
+   //             map((p) -> JsonUtil.SingleFromJson(p, new University())).
+   //             peek(System.out::println).
+   //             collect(Collectors.toList());
 
-        universities = universities.stream().map((p) -> JsonUtil.SingleToJson(p)).
-                peek(System.out::println).
-                map((p) -> JsonUtil.SingleFromJson(p, new University())).
-                peek(System.out::println).
-                collect(Collectors.toList());
+        List< Statistics> statistics=new AnalyserUtil().getherStatistic(students, universities);
 
+        XlsWriter.writeXlsStatistic(statistics, endExcelFile);
 
     }
 }

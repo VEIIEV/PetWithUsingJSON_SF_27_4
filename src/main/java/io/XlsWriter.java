@@ -1,13 +1,10 @@
 package io;
 
-import model.Statistic;
-import org.apache.commons.collections4.iterators.ArrayListIterator;
-import org.apache.poi.ss.usermodel.CellStyle;
+import model.Statistics;
 import org.apache.poi.ss.usermodel.FillPatternType;
 import org.apache.poi.ss.usermodel.IndexedColors;
 import org.apache.poi.xssf.usermodel.*;
 
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.List;
@@ -18,10 +15,17 @@ import java.util.ListIterator;
 public class XlsWriter {
 
 
-        //метод для записи в в файл статистики
+    private static int indexOfRow = 1;
+    private XlsWriter() {
+
+    }
+
+
+    //метод для записи в файл статистики
     //на вход принимает коллекцию Statistic и расположение файла в строковом виде
-    public void writeXlsStatistic(List<Statistic> statistics, String filePath){
+    public static void writeXlsStatistic(List<Statistics> statistics, String filePath) {
         //создаём объект excel'я
+
         XSSFWorkbook workbook = new XSSFWorkbook();
         //создаём объект страницы
         XSSFSheet sheet = workbook.createSheet("Statistics");
@@ -37,10 +41,10 @@ public class XlsWriter {
         XSSFRow header = sheet.createRow(0);
 
         //настраиваем стиль
-        headerStyle.setFillForegroundColor(IndexedColors.LIGHT_BLUE.getIndex());
+        headerStyle.setFillForegroundColor(IndexedColors.AQUA.getIndex());
         headerStyle.setFillPattern(FillPatternType.SOLID_FOREGROUND);
         font.setFontName("Arial");
-        font.setFontHeightInPoints((short) 14);
+        font.setFontHeightInPoints((short) 7);
         font.setBold(true);
         headerStyle.setFont(font);
         //заполняем оглавление
@@ -65,28 +69,25 @@ public class XlsWriter {
         headerCell.setCellStyle(headerStyle);
 
         //записываем данные
-        addData(statistics, sheet, headerStyle);
+
+        addData(statistics, sheet,headerStyle);
 
         //записываем информации в файл
-        try (FileOutputStream fileOutputStream = new FileOutputStream(filePath)){
+        try (FileOutputStream fileOutputStream = new FileOutputStream(filePath)) {
             workbook.write(fileOutputStream);
             workbook.close();
 
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
 
     }
 
-    private static void addData(List<Statistic> statistics, XSSFSheet sheet, XSSFCellStyle headerStyle) {
-        Statistic statistic;
-        int i =1;
-        ListIterator iterator = new ArrayListIterator(statistics);
-        while(iterator.hasNext()){
-            statistic= (Statistic) iterator.next();
-            XSSFRow data = sheet.createRow(i);
+    private static void addData(List<Statistics> statistics, XSSFSheet sheet, XSSFCellStyle headerStyle) {
+
+        for (Statistics statistic :
+                statistics) {
+            XSSFRow data = sheet.createRow(indexOfRow++);
 
             XSSFCell dataCell = data.createCell(0);
             dataCell.setCellValue(statistic.getStudyProfile().toString());
@@ -97,19 +98,19 @@ public class XlsWriter {
             dataCell.setCellStyle(headerStyle);
 
             dataCell = data.createCell(2);
-            dataCell.setCellValue(statistic.getnStudentsByProfile().toString());
+            dataCell.setCellValue(statistic.getnStudentsByProfile());
             dataCell.setCellStyle(headerStyle);
 
             dataCell = data.createCell(3);
-            dataCell.setCellValue(statistic.getnUniversitiesByProfile().toString());
+            dataCell.setCellValue(statistic.getnUniversitiesByProfile());
             dataCell.setCellStyle(headerStyle);
 
             dataCell = data.createCell(4);
-            dataCell.setCellValue(statistic.getUniversitiesName().toString());
+            dataCell.setCellValue(statistic.getUniversitiesName());
             dataCell.setCellStyle(headerStyle);
 
-            i++;
         }
+
     }
 
 }

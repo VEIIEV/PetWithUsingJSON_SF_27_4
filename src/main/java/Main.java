@@ -2,7 +2,7 @@ import enums.SComparatorList;
 import model.Student;
 import enums.StudyProfile;
 import model.University;
-import utils.MyComparator;
+import utils.MyComparatorUtil;
 
 public class Main {
 //В методе main реализовать получение компаратора по типу (вызов метода утилитного класса).
@@ -15,7 +15,7 @@ public class Main {
         System.out.println(university+ "\n"
         + student);
         System.out.println("there is a comparison of student and student2");
-        System.out.println(MyComparator.getMyComparator(SComparatorList.FULLNAME).compare(student,student2));
-        System.out.println(MyComparator.getMyComparator(SComparatorList.FULLNAME));
+        System.out.println(MyComparatorUtil.getMyComparator(SComparatorList.FULLNAME).compare(student,student2));
+        System.out.println(MyComparatorUtil.getMyComparator(SComparatorList.FULLNAME));
     }
 }

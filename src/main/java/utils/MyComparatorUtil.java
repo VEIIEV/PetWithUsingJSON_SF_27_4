@@ -4,7 +4,7 @@ import comparators.*;
 import enums.SComparatorList;
 import enums.UComparatorList;
 
-public class MyComparator {
+public class MyComparatorUtil {
     //Создать утилитный класс (то есть класс, не позволяющий создать свой экземпляр, работающий
     // исключительно по статическим методам), в котором реализовать два метода, принимающих
     // на вход enum с типом компаратора, определяющих и возвращающих необходимый из реализованных компараторов.
