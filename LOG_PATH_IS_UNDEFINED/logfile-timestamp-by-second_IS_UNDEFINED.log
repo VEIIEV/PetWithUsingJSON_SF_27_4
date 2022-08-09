@@ -1,0 +1,2 @@
+#logback.classic pattern: %msg%n
+Test log from Test

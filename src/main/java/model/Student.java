@@ -8,7 +8,7 @@ public class Student {
     @SerializedName("идентификатор вуза")
     private String universityId;
     @SerializedName("текущий курс учащегося")
-    private int currentCourseNumber;
+    private Integer currentCourseNumber;
     @SerializedName("средняя оценка")
     private float avgExamScore;
 
