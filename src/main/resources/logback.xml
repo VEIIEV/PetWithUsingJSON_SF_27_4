@@ -5,20 +5,36 @@
 
     <!--мы определили ConsoleAppender с именем STDOUT что бы использовать pattern layout
       заментка что мы неявно указываем шаблон, а вместо этого полагаемся на дефолтный logback value который использует pattern layout-->
+
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
             <!--Форматируем сообщения лога -->
-            <pattern>%d{HH:mm:ss.SSS} %-5level %L [%thread] %logger{36} - %msg%n</pattern>
+            <pattern>%d{HH:mm:ss.SSS} %-5level %green(%L) [%thread] %logger{36} - %msg%n</pattern>
         </encoder>
     </appender>
+
     <appender name="File-Appender" class="ch.qos.logback.core.FileAppender">
-        <file>${LOG_PATH}/logfile-${timestamp-by-second}.log</file>
-        <encoder>
-            <pattern>%d{HH:mm:ss.SSS} %-5level %L [%thread] %logger{36} - %msg%n</pattern>
-            <outputPatternAsHeader>true</outputPatternAsHeader>
+        <file>${LOG_PATH}/logfile-${timestamp-by-second}.xml</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <!-- daily rollover -->
+            <fileNamePattern>${LOG_PATH}/logfile-${timestamp-by-second}-%d{yyyy-MM-dd}.%i.xml.gz</fileNamePattern>
+            <!-- each archived file's size will be max 10MB -->
+            <maxFileSize>10MB</maxFileSize>
+            <!-- 7 days to keep -->
+            <maxHistory>7</maxHistory>
+            <!-- total size of all archive files, if total size > 1GB, it will delete old archived file -->
+            <totalSizeCap>1GB</totalSizeCap>
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+            <charset>UTF-8</charset>
+            <layout class="ch.qos.logback.classic.log4j.XMLLayout">
+                <locationInfo>true</locationInfo>
+                <properties>true</properties>
+            </layout>
         </encoder>
     </appender>
-    <root level="debug">
+
+    <root level="ALL">
         <appender-ref ref="STDOUT"/>
         <appender-ref ref="File-Appender"/>
     </root>

@@ -20,9 +20,9 @@ public class Boot {
 
     static final String endExcelFile = "src/main/resources/StatisticsInfo.xlsx";
 
-    //Р’ РјРµС‚РѕРґРµ main СЂРµР°Р»РёР·РѕРІР°С‚СЊ РїРѕР»СѓС‡РµРЅРёРµ РєРѕРјРїР°СЂР°С‚РѕСЂР° РїРѕ С‚РёРїСѓ (РІС‹Р·РѕРІ РјРµС‚РѕРґР° СѓС‚РёР»РёС‚РЅРѕРіРѕ РєР»Р°СЃСЃР°).
-    // РЎРѕС…СЂР°РЅРёС‚СЊ РїРѕР»СѓС‡РµРЅРЅС‹Рµ Р·РЅР°С‡РµРЅРёСЏ (С‚Рѕ РµСЃС‚СЊ СЌРєР·РµРјРїР»СЏСЂС‹ РєРѕРјРїР°СЂР°С‚РѕСЂРѕРІ) РІ РїРµСЂРµРјРµРЅРЅС‹Рµ СЃ С‚РёРїРѕРј РёРЅС‚РµСЂС„РµР№СЃР° РєРѕРјРїР°СЂР°С‚РѕСЂР°
-    // (Р°РЅР°Р»РѕРіРёС‡РЅРѕ С‚РѕРјСѓ, РєР°Рє РІ РєРѕР»Р»РµРєС†РёСЏС… РґРµР»Р°РµС‚СЃСЏ List<T> someList = new ArrayList()).
+    //В методе main реализовать получение компаратора по типу (вызов метода утилитного класса).
+    // Сохранить полученные значения (то есть экземпляры компараторов) в переменные с типом интерфейса компаратора
+    // (аналогично тому, как в коллекциях делается List<T> someList = new ArrayList()).
 
     public static void main(String[] args) throws IOException {
 
@@ -68,8 +68,8 @@ public class Boot {
         //deserialization and test result
         List<University> newUniversities = JsonUtil.CollectionFromJson(universitiesJson, universities);
         List<Student> newStudents = JsonUtil.CollectionFromJson(studentsJson, students);
-        System.out.println("СЂРµР·СѓР»СЊС‚Р°С‚ СЂР°Р·РјРµСЂР° РєРѕР»Р»РµРєС†РёР№ СЃС‚СѓРґРµРЅС‚РѕРІ: " + (newStudents.stream().count() == students.stream().count()));
-        System.out.println("СЂРµР·СѓР»СЊС‚Р°С‚ СЂР°Р·РјРµСЂР° РєРѕР»Р»РµРєС†РёР№ СѓРЅРёРІРµСЂСЃРёС‚РµС‚РѕРІ: " + (newUniversities.stream().count() == universities.stream().count()));
+        System.out.println("результат размера коллекций студентов: " + (newStudents.stream().count() == students.stream().count()));
+        System.out.println("результат размера коллекций университетов: " + (newUniversities.stream().count() == universities.stream().count()));
 
 
         //executing 7-10 tasks
