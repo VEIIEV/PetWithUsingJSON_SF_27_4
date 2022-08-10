@@ -17,36 +17,48 @@ import java.util.List;
 
 public class XlsReader {
 
-    private static final Logger logger = LoggerFactory.getLogger(XlsReader.class);
+
+    private static final Logger logger = LoggerFactory.getLogger(XlsReader.class.getName());
 
     private XlsReader() {
     }
 
     public static List<University> readXlsUniversities(String filePath) throws IOException {
 
+
+        logger.info("method readXlsUniversities was started");
+
         List<University> universities = new ArrayList<>();
 
-        FileInputStream inputStream = new FileInputStream(filePath);
-        XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
-        XSSFSheet sheet = workbook.getSheet("Университеты");
+        try {
+            FileInputStream inputStream = new FileInputStream(filePath);
+            XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
+            XSSFSheet sheet = workbook.getSheet("Университеты");
 
-        if(sheet!=null) {
-            Iterator<Row> rows = sheet.iterator();
-            rows.next();
+            if (sheet != null) {
+                Iterator<Row> rows = sheet.iterator();
+                rows.next();
 
-            while (rows.hasNext()) {
-                Row currentRow = rows.next();
-                University university = new University();
-                universities.add(university);
-                university.setId(currentRow.getCell(0).getStringCellValue());
-                university.setFullName(currentRow.getCell(1).getStringCellValue());
-                university.setShortName(currentRow.getCell(2).getStringCellValue());
-                university.setYearOfFoundation((int) currentRow.getCell(3).getNumericCellValue());
-                university.setMainProfile(StudyProfile.valueOf(
-                        StudyProfile.class, currentRow.getCell(4).getStringCellValue()));
+                while (rows.hasNext()) {
+                    Row currentRow = rows.next();
+                    University university = new University();
+                    universities.add(university);
+                    university.setId(currentRow.getCell(0).getStringCellValue());
+                    university.setFullName(currentRow.getCell(1).getStringCellValue());
+                    university.setShortName(currentRow.getCell(2).getStringCellValue());
+                    university.setYearOfFoundation((int) currentRow.getCell(3).getNumericCellValue());
+                    university.setMainProfile(StudyProfile.valueOf(
+                            StudyProfile.class, currentRow.getCell(4).getStringCellValue()));
+                }
             }
         }
+        catch (IOException e) {
+            logger.error("reading from excel was failed: {}", e );
+            return universities;
 
+        }
+
+        logger.info("reading from excel was success");
         return universities;
     }
 
@@ -54,25 +66,37 @@ public class XlsReader {
 
         List<Student> students = new ArrayList<>();
 
-        FileInputStream inputStream = new FileInputStream(filePath);
-        XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
-        XSSFSheet sheet = workbook.getSheet("Студенты");
+        logger.info("method readXlsStudents was started");
 
-        if(sheet!=null) {
-            Iterator<Row> rows = sheet.iterator();
-            rows.next();
+        try {
 
-            while (rows.hasNext()) {
-                Row currentRow = rows.next();
-                Student student = new Student();
-                students.add(student);
-                student.setUniversityId(currentRow.getCell(0).getStringCellValue());
-                student.setFullName(currentRow.getCell(1).getStringCellValue());
-                student.setCurrentCourseNumber((int) currentRow.getCell(2).getNumericCellValue());
-                student.setAvgExamScore((float) currentRow.getCell(3).getNumericCellValue());
+            FileInputStream inputStream = new FileInputStream(filePath);
+            XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
+            XSSFSheet sheet = workbook.getSheet("Студенты");
+
+            if (sheet != null) {
+                Iterator<Row> rows = sheet.iterator();
+                rows.next();
+
+                while (rows.hasNext()) {
+                    Row currentRow = rows.next();
+                    Student student = new Student();
+                    students.add(student);
+                    student.setUniversityId(currentRow.getCell(0).getStringCellValue());
+                    student.setFullName(currentRow.getCell(1).getStringCellValue());
+                    student.setCurrentCourseNumber((int) currentRow.getCell(2).getNumericCellValue());
+                    student.setAvgExamScore((float) currentRow.getCell(3).getNumericCellValue());
+                }
             }
+
+        }
+        catch (IOException e){
+            logger.error("reading from excel was failed: {}", e );
+            return students;
+
         }
 
+        logger.info("reading from excel was success");
         return students;
     }
 }

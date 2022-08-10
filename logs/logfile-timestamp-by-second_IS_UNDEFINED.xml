@@ -1,0 +1,389 @@
+<log4j:event logger="Test"
+             timestamp="1660092757896" level="INFO" thread="main" xmlns:log4j="http://www.w3.org/1999/XSL/Transform">
+  <log4j:message>Test log from Test</log4j:message>
+  <log4j:locationInfo class="Test"
+                      method="main" file="Test.java" line="9"/>
+
+</log4j:event>
+
+<log4j:event logger="Test"
+             timestamp="1660092757900" level="DEBUG" thread="main">
+  <log4j:message>Debug log message</log4j:message>
+  <log4j:locationInfo class="Test"
+                      method="main" file="Test.java" line="10"/>
+
+</log4j:event>
+
+<log4j:event logger="Test"
+             timestamp="1660092757900" level="INFO" thread="main">
+  <log4j:message>Info log message</log4j:message>
+  <log4j:locationInfo class="Test"
+                      method="main" file="Test.java" line="11"/>
+
+</log4j:event>
+
+<log4j:event logger="Test"
+             timestamp="1660092757900" level="ERROR" thread="main">
+  <log4j:message>Error log message</log4j:message>
+  <log4j:locationInfo class="Test"
+                      method="main" file="Test.java" line="12"/>
+
+</log4j:event>
+
+<log4j:event logger="Test"
+             timestamp="1660092814279" level="INFO" thread="main">
+  <log4j:message>Test log from Test</log4j:message>
+  <log4j:locationInfo class="Test"
+                      method="main" file="Test.java" line="9"/>
+
+</log4j:event>
+
+<log4j:event logger="Test"
+             timestamp="1660092814283" level="DEBUG" thread="main">
+  <log4j:message>Debug log message</log4j:message>
+  <log4j:locationInfo class="Test"
+                      method="main" file="Test.java" line="10"/>
+
+</log4j:event>
+
+<log4j:event logger="Test"
+             timestamp="1660092814283" level="INFO" thread="main">
+  <log4j:message>Info log message</log4j:message>
+  <log4j:locationInfo class="Test"
+                      method="main" file="Test.java" line="11"/>
+
+</log4j:event>
+
+<log4j:event logger="Test"
+             timestamp="1660092814283" level="ERROR" thread="main">
+  <log4j:message>Error log message</log4j:message>
+  <log4j:locationInfo class="Test"
+                      method="main" file="Test.java" line="12"/>
+
+</log4j:event>
+
+<log4j:event logger="Test"
+             timestamp="1660092867302" level="INFO" thread="main">
+  <log4j:message>Test log from Test</log4j:message>
+  <log4j:locationInfo class="Test"
+                      method="main" file="Test.java" line="9"/>
+
+</log4j:event>
+
+<log4j:event logger="Test"
+             timestamp="1660092867306" level="DEBUG" thread="main">
+  <log4j:message>Debug log message</log4j:message>
+  <log4j:locationInfo class="Test"
+                      method="main" file="Test.java" line="10"/>
+
+</log4j:event>
+
+<log4j:event logger="Test"
+             timestamp="1660092867306" level="INFO" thread="main">
+  <log4j:message>Info log message</log4j:message>
+  <log4j:locationInfo class="Test"
+                      method="main" file="Test.java" line="11"/>
+
+</log4j:event>
+
+<log4j:event logger="Test"
+             timestamp="1660092867306" level="ERROR" thread="main">
+  <log4j:message>Error log message</log4j:message>
+  <log4j:locationInfo class="Test"
+                      method="main" file="Test.java" line="12"/>
+
+</log4j:event>
+
+<log4j:event logger="Test"
+             timestamp="1660095758728" level="INFO" thread="main">
+  <log4j:message>Test log from Test</log4j:message>
+  <log4j:locationInfo class="Test"
+                      method="main" file="Test.java" line="9"/>
+
+</log4j:event>
+
+<log4j:event logger="Test"
+             timestamp="1660095758732" level="DEBUG" thread="main">
+  <log4j:message>Debug log message</log4j:message>
+  <log4j:locationInfo class="Test"
+                      method="main" file="Test.java" line="10"/>
+
+</log4j:event>
+
+<log4j:event logger="Test"
+             timestamp="1660095758733" level="INFO" thread="main">
+  <log4j:message>Info log message</log4j:message>
+  <log4j:locationInfo class="Test"
+                      method="main" file="Test.java" line="11"/>
+
+</log4j:event>
+
+<log4j:event logger="Test"
+             timestamp="1660095758733" level="ERROR" thread="main">
+  <log4j:message>Error log message</log4j:message>
+  <log4j:locationInfo class="Test"
+                      method="main" file="Test.java" line="12"/>
+
+</log4j:event>
+
+<log4j:event logger="Test"
+             timestamp="1660171836542" level="INFO" thread="main">
+  <log4j:message>Test log from Test</log4j:message>
+  <log4j:locationInfo class="Test"
+                      method="main" file="Test.java" line="9"/>
+
+</log4j:event>
+
+<log4j:event logger="Test"
+             timestamp="1660171836546" level="DEBUG" thread="main">
+  <log4j:message>Debug log message</log4j:message>
+  <log4j:locationInfo class="Test"
+                      method="main" file="Test.java" line="10"/>
+
+</log4j:event>
+
+<log4j:event logger="Test"
+             timestamp="1660171836546" level="INFO" thread="main">
+  <log4j:message>Info log message</log4j:message>
+  <log4j:locationInfo class="Test"
+                      method="main" file="Test.java" line="11"/>
+
+</log4j:event>
+
+<log4j:event logger="Test"
+             timestamp="1660171836546" level="ERROR" thread="main">
+  <log4j:message>Error log message</log4j:message>
+  <log4j:locationInfo class="Test"
+                      method="main" file="Test.java" line="12"/>
+
+</log4j:event>
+
+<log4j:event logger="Boot"
+             timestamp="1660171847350" level="INFO" thread="main">
+  <log4j:message>App  started</log4j:message>
+  <log4j:locationInfo class="Boot"
+                      method="main" file="Boot.java" line="34"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsReader"
+             timestamp="1660171847390" level="INFO" thread="main">
+  <log4j:message>method readXlsUniversities was started</log4j:message>
+  <log4j:locationInfo class="io.XlsReader"
+                      method="readXlsUniversities" file="XlsReader.java" line="29"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsReader"
+             timestamp="1660171847942" level="INFO" thread="main">
+  <log4j:message>reading from excel was success</log4j:message>
+  <log4j:locationInfo class="io.XlsReader"
+                      method="readXlsUniversities" file="XlsReader.java" line="61"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsReader"
+             timestamp="1660171847959" level="INFO" thread="main">
+  <log4j:message>method readXlsStudents was started</log4j:message>
+  <log4j:locationInfo class="io.XlsReader"
+                      method="readXlsStudents" file="XlsReader.java" line="69"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsReader"
+             timestamp="1660171847987" level="INFO" thread="main">
+  <log4j:message>reading from excel was success</log4j:message>
+  <log4j:locationInfo class="io.XlsReader"
+                      method="readXlsStudents" file="XlsReader.java" line="99"/>
+
+</log4j:event>
+
+<log4j:event logger="Boot"
+             timestamp="1660171848028" level="DEBUG" thread="main">
+  <log4j:message>students Json looks like: [
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Иванов И. А.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0002-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 2,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.0
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Козлов М. В.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0002-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 2,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.6
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Фёдоров А. И.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0002-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 3,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.2
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Игнатьев М. М.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0003-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 4,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.3
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Соколов В. В.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0004-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 1,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.8
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Сидоров Е. Г.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0004-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 2,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 3.9
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Витальев В. А.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0001-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 2,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.0
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Петров П. А.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0001-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 1,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 5.0
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Алексеев С. В.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0001-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 1,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 5.0
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Иванов А. Г.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0001-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 3,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.8
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Васильев В. П.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0001-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 4,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.7
+  }
+]</log4j:message>
+  <log4j:locationInfo class="Boot"
+                      method="main" file="Boot.java" line="69"/>
+
+</log4j:event>
+
+<log4j:event logger="Boot"
+             timestamp="1660171848029" level="DEBUG" thread="main">
+  <log4j:message>universities Json looks like: [
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0001-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Московский Выдуманный Университет&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;МВУ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 1990,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;PHYSICS&quot;
+  },
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0002-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Московский Придуманный Институт&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;МПИ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 1987,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;PHYSICS&quot;
+  },
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0003-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Московский Государственный Медицинский Университет&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;МГМУ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 1960,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;MEDICINE&quot;
+  },
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0004-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Тамбовский Университет Медицины&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;ТУМ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 1995,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;MEDICINE&quot;
+  },
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0005-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Самарский Медицинский Институт&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;СМИ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 1936,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;MEDICINE&quot;
+  },
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0006-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Воронежский Литературно-Переводческий Университет&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;ВЛПУ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 2003,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;LINGUISTICS&quot;
+  },
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0007-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Казанский Университет Вычислений&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;КУВ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 1989,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;MATHEMATICS&quot;
+  }
+]</log4j:message>
+  <log4j:locationInfo class="Boot"
+                      method="main" file="Boot.java" line="70"/>
+
+</log4j:event>
+
+<log4j:event logger="Boot"
+             timestamp="1660171848034" level="DEBUG" thread="main">
+  <log4j:message>результат размера коллекций студентов: true</log4j:message>
+  <log4j:locationInfo class="Boot"
+                      method="main" file="Boot.java" line="76"/>
+
+</log4j:event>
+
+<log4j:event logger="Boot"
+             timestamp="1660171848035" level="DEBUG" thread="main">
+  <log4j:message>результат размера коллекций университетов: true</log4j:message>
+  <log4j:locationInfo class="Boot"
+                      method="main" file="Boot.java" line="78"/>
+
+</log4j:event>
+
+<log4j:event logger="utils.AnalyserUtil"
+             timestamp="1660171848044" level="INFO" thread="main">
+  <log4j:message>method getherStatistic was started</log4j:message>
+  <log4j:locationInfo class="utils.AnalyserUtil"
+                      method="getherStatistic" file="AnalyserUtil.java" line="26"/>
+
+</log4j:event>
+
+<log4j:event logger="utils.AnalyserUtil"
+             timestamp="1660171848052" level="INFO" thread="main">
+  <log4j:message>getherStatistic  successfully builded statisticsList </log4j:message>
+  <log4j:locationInfo class="utils.AnalyserUtil"
+                      method="getherStatistic" file="AnalyserUtil.java" line="89"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsWriter"
+             timestamp="1660171848058" level="INFO" thread="main">
+  <log4j:message>method writeXlsStatistic was started</log4j:message>
+  <log4j:locationInfo class="io.XlsWriter"
+                      method="writeXlsStatistic" file="XlsWriter.java" line="31"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsWriter"
+             timestamp="1660171848236" level="INFO" thread="main">
+  <log4j:message>writing to excel was success</log4j:message>
+  <log4j:locationInfo class="io.XlsWriter"
+                      method="writeXlsStatistic" file="XlsWriter.java" line="89"/>
+
+</log4j:event>
+
+<log4j:event logger="Boot"
+             timestamp="1660171848236" level="INFO" thread="main">
+  <log4j:message>app finished without mess</log4j:message>
+  <log4j:locationInfo class="Boot"
+                      method="main" file="Boot.java" line="93"/>
+
+</log4j:event>
+

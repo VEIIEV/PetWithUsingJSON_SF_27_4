@@ -1,0 +1,58 @@
+#logback.classic pattern: %msg%n
+Test log from Test
+#logback.classic pattern: %msg%n
+Test log from Test
+#logback.classic pattern: %msg%n
+Test log from Test
+#logback.classic pattern: %msg%n
+Test log from Test
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-5level %L [%thread] %logger{36} - %msg%n
+03:05:21.338 INFO  9 [main] Test - Test log from Test
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-5level %L [%thread] %logger{36} - %msg%n
+03:25:52.823 INFO  9 [main] Test - Test log from Test
+03:25:52.826 DEBUG 10 [main] Test - Debug log message
+03:25:52.827 INFO  11 [main] Test - Info log message
+03:25:52.827 ERROR 12 [main] Test - Error log message
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-5level %L [%thread] %logger{36} - %msg%n
+03:29:42.131 INFO  9 [main] Test - Test log from Test
+03:29:42.134 DEBUG 10 [main] Test - Debug log message
+03:29:42.134 INFO  11 [main] Test - Info log message
+03:29:42.134 ERROR 12 [main] Test - Error log message
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-5level %L [%thread] %logger{36} - %msg%n
+03:48:23.355 INFO  9 [main] Test - Test log from Test
+03:48:23.359 DEBUG 10 [main] Test - Debug log message
+03:48:23.359 INFO  11 [main] Test - Info log message
+03:48:23.359 ERROR 12 [main] Test - Error log message
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-5level %L [%thread] %logger{36} - %msg%n
+03:55:29.315 DEBUG 60 [main] io.XlsReader - Р·РЅР°С‡РµРЅРёРµ sheet = null
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-5level %L [%thread] %logger{36} - %msg%n
+03:55:56.847 DEBUG 60 [main] io.XlsReader - значение sheet = Name: /xl/worksheets/sheet1.xml - Content Type: application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-5level %L [%thread] %logger{36} - %msg%n
+03:56:31.854 DEBUG 60 [main] io.XlsReader - значение sheet = Name: /xl/worksheets/sheet1.xml - Content Type: application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-5level %L [%thread] %logger{36} - %msg%n
+04:20:45.352 DEBUG 60 [main] io.XlsReader - значение sheet = Name: /xl/worksheets/sheet1.xml - Content Type: application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-5level %L [%thread] %logger{36} - %msg%n
+04:20:53.877 INFO  9 [main] Test - Test log from Test
+04:20:53.879 DEBUG 10 [main] Test - Debug log message
+04:20:53.879 INFO  11 [main] Test - Info log message
+04:20:53.879 ERROR 12 [main] Test - Error log message
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-5level %green%L [%thread] %logger{36} - %msg%n
+04:37:25.501 INFO  [32m[0;39m9 [main] Test - Test log from Test
+04:37:25.503 DEBUG [32m[0;39m10 [main] Test - Debug log message
+04:37:25.503 INFO  [32m[0;39m11 [main] Test - Info log message
+04:37:25.503 ERROR [32m[0;39m12 [main] Test - Error log message
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-5level %green%L [%thread] %logger{36} - %msg%n
+04:37:33.894 INFO  [32m[0;39m9 [main] Test - Test log from Test
+04:37:33.897 DEBUG [32m[0;39m10 [main] Test - Debug log message
+04:37:33.898 INFO  [32m[0;39m11 [main] Test - Info log message
+04:37:33.898 ERROR [32m[0;39m12 [main] Test - Error log message
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-5level %green%L [%thread] %logger{36} - %msg%n
+04:37:43.046 INFO  [32m[0;39m9 [main] Test - Test log from Test
+04:37:43.050 DEBUG [32m[0;39m10 [main] Test - Debug log message
+04:37:43.050 INFO  [32m[0;39m11 [main] Test - Info log message
+04:37:43.050 ERROR [32m[0;39m12 [main] Test - Error log message
+#logback.classic pattern: %d{HH:mm:ss.SSS} %-5level %green%L [%thread] %logger{36} - %msg%n
+04:38:17.440 INFO  [32m[0;39m9 [main] Test - Test log from Test
+04:38:17.443 DEBUG [32m[0;39m10 [main] Test - Debug log message
+04:38:17.443 INFO  [32m[0;39m11 [main] Test - Info log message
+04:38:17.443 ERROR [32m[0;39m12 [main] Test - Error log message

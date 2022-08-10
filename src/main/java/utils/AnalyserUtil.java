@@ -5,6 +5,8 @@ import model.Statistics;
 import model.Student;
 import model.University;
 import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -16,8 +18,13 @@ import java.util.stream.Collectors;
 
 public class AnalyserUtil {
 
+    private static final Logger logger = LoggerFactory.getLogger(AnalyserUtil.class.getName());
+    private AnalyserUtil() {}
 
-    public List<Statistics> getherStatistic(List<Student> students, List<University> universities) {
+    public static List<Statistics> getherStatistic(List<Student> students, List<University> universities) {
+
+        logger.info("method getherStatistic was started");
+
 
 
         //мне нужны данные
@@ -77,6 +84,10 @@ public class AnalyserUtil {
             avgExamScore.ifPresent(value -> statistics.setEvgExmScore(
                     (float) BigDecimal.valueOf(value).setScale(2, RoundingMode.HALF_UP).doubleValue()));
         });
+
+
+        logger.info("getherStatistic  successfully builded statisticsList ");
+
         //сформированный объёкт используем как возвращаемое значение
         return statisticsList;
 

@@ -1,5 +1,7 @@
 import io.XlsWriter;
 import model.Statistics;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import utils.AnalyserUtil;
 import utils.JsonUtil;
 import utils.MyComparatorUtil;
@@ -20,27 +22,27 @@ public class Boot {
 
     static final String endExcelFile = "src/main/resources/StatisticsInfo.xlsx";
 
+    private static final Logger logger = LoggerFactory.getLogger(Boot.class.getName());
+
+
     //В методе main реализовать получение компаратора по типу (вызов метода утилитного класса).
     // Сохранить полученные значения (то есть экземпляры компараторов) в переменные с типом интерфейса компаратора
     // (аналогично тому, как в коллекциях делается List<T> someList = new ArrayList()).
 
     public static void main(String[] args) throws IOException {
 
+        logger.info("App  started");
 
         //comparator list creation
         List<UniversityComparator> universityComparators = new ArrayList<>();
 
-        universityComparators.add(MyComparatorUtil.getMyComparator(UComparatorList.FULLNAME));
-        universityComparators.add(MyComparatorUtil.getMyComparator(UComparatorList.SHORTNAME));
-        universityComparators.add(MyComparatorUtil.getMyComparator(UComparatorList.ID));
-        universityComparators.add(MyComparatorUtil.getMyComparator(UComparatorList.STUDYPROFILE));
-        universityComparators.add(MyComparatorUtil.getMyComparator(UComparatorList.YEAROFFOUNDATION));
+        extracted(universityComparators);
         //write in param
         List<University> universities =
                 XlsReader.readXlsUniversities("src/main/resources/universityInfo.xlsx");
 
         //read from param
-        universities.stream().sorted(universityComparators.get(2).reversed()).forEach(System.out::println);
+        //universities.stream().sorted(universityComparators.get(2).reversed()).forEach(System.out::println);
 
 
         ////comparator list creation
@@ -56,38 +58,47 @@ public class Boot {
 
 
         //read from param
-       students.stream().sorted(studentComparators.get(2).reversed()).forEach(System.out::println);
+       //students.stream().sorted(studentComparators.get(2).reversed()).forEach(System.out::println);
 
 
         //serialization and then read json
         String studentsJson = JsonUtil.CollectionToJson(students);
         String universitiesJson = JsonUtil.CollectionToJson(universities);
-        System.out.println(studentsJson);
-        System.out.println(universitiesJson);
+        //System.out.println(studentsJson);
+        //System.out.println(universitiesJson);
+        logger.debug("students Json looks like: {}", studentsJson);
+        logger.debug("universities Json looks like: {}", universitiesJson);
 
         //deserialization and test result
         List<University> newUniversities = JsonUtil.CollectionFromJson(universitiesJson, universities);
         List<Student> newStudents = JsonUtil.CollectionFromJson(studentsJson, students);
-        System.out.println("результат размера коллекций студентов: " + (newStudents.stream().count() == students.stream().count()));
-        System.out.println("результат размера коллекций университетов: " + (newUniversities.stream().count() == universities.stream().count()));
-
+        //System.out.println("результат размера коллекций студентов: " + (newStudents.stream().count() == students.stream().count()));
+        logger.debug("результат размера коллекций студентов: " + (newStudents.stream().count() == students.stream().count()));
+        //System.out.println("результат размера коллекций университетов: " + (newUniversities.stream().count() == universities.stream().count()));
+        logger.debug("результат размера коллекций университетов: " + (newUniversities.stream().count() == universities.stream().count()));
 
         //executing 7-10 tasks
         students = students.stream().map((p) -> JsonUtil.SingleToJson(p)).
-                peek(System.out::println).
                 map((p) -> JsonUtil.SingleFromJson(p, new Student())).
-                peek(System.out::println).
                 collect(Collectors.toList());
 
         universities = universities.stream().map((p) -> JsonUtil.SingleToJson(p)).
-                peek(System.out::println).
                 map((p) -> JsonUtil.SingleFromJson(p, new University())).
-                peek(System.out::println).
                 collect(Collectors.toList());
 
-        List<Statistics> statistics = new AnalyserUtil().getherStatistic(students, universities);
+        List<Statistics> statistics = AnalyserUtil.getherStatistic(students, universities);
 
         XlsWriter.writeXlsStatistic(statistics, endExcelFile);
 
+        logger.info("app finished without mess");
+
+    }
+
+    private static void extracted(List<UniversityComparator> universityComparators) {
+        universityComparators.add(MyComparatorUtil.getMyComparator(UComparatorList.FULLNAME));
+        universityComparators.add(MyComparatorUtil.getMyComparator(UComparatorList.SHORTNAME));
+        universityComparators.add(MyComparatorUtil.getMyComparator(UComparatorList.ID));
+        universityComparators.add(MyComparatorUtil.getMyComparator(UComparatorList.STUDYPROFILE));
+        universityComparators.add(MyComparatorUtil.getMyComparator(UComparatorList.YEAROFFOUNDATION));
     }
 }

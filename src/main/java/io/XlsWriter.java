@@ -4,15 +4,18 @@ import model.Statistics;
 import org.apache.poi.ss.usermodel.FillPatternType;
 import org.apache.poi.ss.usermodel.IndexedColors;
 import org.apache.poi.xssf.usermodel.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.List;
-import java.util.ListIterator;
 
 
 //класс для записи в файл
 public class XlsWriter {
+
+    private static final Logger logger = LoggerFactory.getLogger(XlsWriter.class.getName());
 
 
     private static int indexOfRow = 1;
@@ -24,8 +27,10 @@ public class XlsWriter {
     //метод для записи в файл статистики
     //на вход принимает коллекцию Statistic и расположение файла в строковом виде
     public static void writeXlsStatistic(List<Statistics> statistics, String filePath) {
-        //создаём объект excel'я
 
+        logger.info("method writeXlsStatistic was started");
+
+        //создаём объект excel'я
         XSSFWorkbook workbook = new XSSFWorkbook();
         //создаём объект страницы
         XSSFSheet sheet = workbook.createSheet("Statistics");
@@ -78,8 +83,10 @@ public class XlsWriter {
             workbook.close();
 
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            logger.error("writing to excel was failed: {}", e);
         }
+
+        logger.info("writing to excel was success");
 
     }
 
