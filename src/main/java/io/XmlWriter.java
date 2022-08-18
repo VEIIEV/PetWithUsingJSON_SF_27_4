@@ -26,13 +26,15 @@ public class XmlWriter {
         try {
             logger.info("XML marshalling started");
 
+            //получаем контекст (связываем jaxb с классом, по объектам которого нужно строить xml  конструкции
             JAXBContext jaxbContext = JAXBContext.newInstance(FullInfo.class);
 
-
+            //создаем маршаллер, хрень которая и занимается сериализации джава объектов
             Marshaller marshaller = jaxbContext.createMarshaller();
-
+            //устанавливаем форматированный ввод
             marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
 
+            //пробоуем создать файл, если он уже есть пишим в лог
             try {
                 Files.createDirectory(Paths.get("xmlReqs"));
                 logger.info("Directory created successfully");
@@ -40,7 +42,8 @@ public class XmlWriter {
                 logger.trace("Directory already created", ioEx);
             }
             File requestFile = new File("xmlReqs/infoReq" + new Date().getTime() + ".xml");
-
+            //создаём xml файл, на вход функции получает, связанный с контекстом класс
+            // и classpath места куда необходимо записать данные
             marshaller.marshal(fullInfo, requestFile);
         } catch (JAXBException jaxbEx) {
             logger.warn( "XML marshalling failed", jaxbEx);

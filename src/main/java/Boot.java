@@ -93,12 +93,16 @@ public class Boot {
 
         XlsWriter.writeXlsStatistic(statistics, endExcelFile);
 
+
+        //создаём объект для записи в xml файл и заполняем его значениями
+
         FullInfo fullInfo = new FullInfo()
                 .setStudentList(students)
                 .setUniversityList(universities)
                 .setStatisticsList(statistics)
                 .setProcessDate(new Date());
 
+        //пишем в файл
         XmlWriter.generateXmlReq(fullInfo);
 
         logger.info("app finished without mess");
