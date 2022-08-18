@@ -1,13 +1,24 @@
 package model;
 
 import enums.StudyProfile;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlTransient;
 
+
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Statistics {
     //минимум, следующие поля: профиль обучения, средний балл за экзамен, количество студентов по профилю, количество университетов по профилю, названия университетов.
+    @XmlElement(name = "universityProfile")
     private StudyProfile studyProfile;
+    @XmlElement(name = "avgScore")
     private float evgExmScore;
+    @XmlTransient
     private int nStudentsByProfile;
+    @XmlTransient
     private int nUniversitiesByProfile;
+    @XmlTransient
     private String universitiesName;
 
     public Statistics(StudyProfile studyProfile, float evgExmScore, int nStudentsByProfile, int nUniversitiesByProfile, String universitiesName) {

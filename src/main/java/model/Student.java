@@ -1,15 +1,24 @@
 package model;
 
 import com.google.gson.annotations.SerializedName;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlTransient;
 
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Student {
     @SerializedName("Полное имя")
+    @XmlElement(name = "studentName")
     private String fullName;
     @SerializedName("идентификатор вуза")
+    @XmlElement(name = "universityId")
     private String universityId;
     @SerializedName("текущий курс учащегося")
+    @XmlTransient
     private Integer currentCourseNumber;
     @SerializedName("средняя оценка")
+    @XmlElement(name = "avgScore")
     private float avgExamScore;
 
     @Override
