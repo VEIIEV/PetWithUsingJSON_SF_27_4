@@ -2,9 +2,8 @@ package model;
 
 import com.google.gson.annotations.SerializedName;
 import enums.StudyProfile;
+
 import jakarta.xml.bind.annotation.*;
-
-
 @XmlAccessorType(XmlAccessType.FIELD)
 public class University {
 

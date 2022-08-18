@@ -1,10 +1,8 @@
 package model;
 
 import enums.StudyProfile;
-import jakarta.xml.bind.annotation.XmlAccessType;
-import jakarta.xml.bind.annotation.XmlAccessorType;
-import jakarta.xml.bind.annotation.XmlElement;
-import jakarta.xml.bind.annotation.XmlTransient;
+
+import jakarta.xml.bind.annotation.*;
 
 
 @XmlAccessorType(XmlAccessType.FIELD)

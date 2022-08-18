@@ -1,20 +1,23 @@
-import io.XlsWriter;
-import model.Statistics;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import utils.AnalyserUtil;
-import utils.JsonUtil;
-import utils.MyComparatorUtil;
 import comparators.StudentComparator;
 import comparators.UniversityComparator;
 import enums.SComparatorList;
 import enums.UComparatorList;
 import io.XlsReader;
+import io.XlsWriter;
+import io.XmlWriter;
+import model.FullInfo;
+import model.Statistics;
 import model.Student;
 import model.University;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import utils.AnalyserUtil;
+import utils.JsonUtil;
+import utils.MyComparatorUtil;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -89,6 +92,14 @@ public class Boot {
         List<Statistics> statistics = AnalyserUtil.getherStatistic(students, universities);
 
         XlsWriter.writeXlsStatistic(statistics, endExcelFile);
+
+        FullInfo fullInfo = new FullInfo()
+                .setStudentList(students)
+                .setUniversityList(universities)
+                .setStatisticsList(statistics)
+                .setProcessDate(new Date());
+
+        XmlWriter.generateXmlReq(fullInfo);
 
         logger.info("app finished without mess");
 

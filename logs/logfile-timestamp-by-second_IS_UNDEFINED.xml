@@ -387,3 +387,1516 @@
 
 </log4j:event>
 
+<log4j:event logger="Boot"
+             timestamp="1660827402789" level="INFO" thread="main">
+  <log4j:message>App  started</log4j:message>
+  <log4j:locationInfo class="Boot"
+                      method="main" file="Boot.java" line="37"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsReader"
+             timestamp="1660827402843" level="INFO" thread="main">
+  <log4j:message>method readXlsUniversities was started</log4j:message>
+  <log4j:locationInfo class="io.XlsReader"
+                      method="readXlsUniversities" file="XlsReader.java" line="29"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsReader"
+             timestamp="1660827403390" level="INFO" thread="main">
+  <log4j:message>reading from excel was success</log4j:message>
+  <log4j:locationInfo class="io.XlsReader"
+                      method="readXlsUniversities" file="XlsReader.java" line="61"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsReader"
+             timestamp="1660827403408" level="INFO" thread="main">
+  <log4j:message>method readXlsStudents was started</log4j:message>
+  <log4j:locationInfo class="io.XlsReader"
+                      method="readXlsStudents" file="XlsReader.java" line="69"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsReader"
+             timestamp="1660827403439" level="INFO" thread="main">
+  <log4j:message>reading from excel was success</log4j:message>
+  <log4j:locationInfo class="io.XlsReader"
+                      method="readXlsStudents" file="XlsReader.java" line="99"/>
+
+</log4j:event>
+
+<log4j:event logger="Boot"
+             timestamp="1660827403480" level="DEBUG" thread="main">
+  <log4j:message>students Json looks like: [
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Иванов И. А.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0002-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 2,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.0
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Козлов М. В.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0002-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 2,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.6
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Фёдоров А. И.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0002-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 3,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.2
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Игнатьев М. М.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0003-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 4,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.3
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Соколов В. В.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0004-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 1,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.8
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Сидоров Е. Г.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0004-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 2,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 3.9
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Витальев В. А.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0001-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 2,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.0
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Петров П. А.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0001-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 1,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 5.0
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Алексеев С. В.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0001-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 1,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 5.0
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Иванов А. Г.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0001-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 3,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.8
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Васильев В. П.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0001-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 4,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.7
+  }
+]</log4j:message>
+  <log4j:locationInfo class="Boot"
+                      method="main" file="Boot.java" line="72"/>
+
+</log4j:event>
+
+<log4j:event logger="Boot"
+             timestamp="1660827403482" level="DEBUG" thread="main">
+  <log4j:message>universities Json looks like: [
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0001-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Московский Выдуманный Университет&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;МВУ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 1990,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;PHYSICS&quot;
+  },
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0002-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Московский Придуманный Институт&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;МПИ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 1987,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;PHYSICS&quot;
+  },
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0003-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Московский Государственный Медицинский Университет&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;МГМУ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 1960,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;MEDICINE&quot;
+  },
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0004-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Тамбовский Университет Медицины&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;ТУМ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 1995,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;MEDICINE&quot;
+  },
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0005-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Самарский Медицинский Институт&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;СМИ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 1936,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;MEDICINE&quot;
+  },
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0006-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Воронежский Литературно-Переводческий Университет&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;ВЛПУ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 2003,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;LINGUISTICS&quot;
+  },
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0007-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Казанский Университет Вычислений&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;КУВ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 1989,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;MATHEMATICS&quot;
+  }
+]</log4j:message>
+  <log4j:locationInfo class="Boot"
+                      method="main" file="Boot.java" line="73"/>
+
+</log4j:event>
+
+<log4j:event logger="Boot"
+             timestamp="1660827403487" level="DEBUG" thread="main">
+  <log4j:message>результат размера коллекций студентов: true</log4j:message>
+  <log4j:locationInfo class="Boot"
+                      method="main" file="Boot.java" line="79"/>
+
+</log4j:event>
+
+<log4j:event logger="Boot"
+             timestamp="1660827403488" level="DEBUG" thread="main">
+  <log4j:message>результат размера коллекций университетов: true</log4j:message>
+  <log4j:locationInfo class="Boot"
+                      method="main" file="Boot.java" line="81"/>
+
+</log4j:event>
+
+<log4j:event logger="utils.AnalyserUtil"
+             timestamp="1660827403495" level="INFO" thread="main">
+  <log4j:message>method getherStatistic was started</log4j:message>
+  <log4j:locationInfo class="utils.AnalyserUtil"
+                      method="getherStatistic" file="AnalyserUtil.java" line="26"/>
+
+</log4j:event>
+
+<log4j:event logger="utils.AnalyserUtil"
+             timestamp="1660827403507" level="INFO" thread="main">
+  <log4j:message>getherStatistic  successfully builded statisticsList </log4j:message>
+  <log4j:locationInfo class="utils.AnalyserUtil"
+                      method="getherStatistic" file="AnalyserUtil.java" line="89"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsWriter"
+             timestamp="1660827403513" level="INFO" thread="main">
+  <log4j:message>method writeXlsStatistic was started</log4j:message>
+  <log4j:locationInfo class="io.XlsWriter"
+                      method="writeXlsStatistic" file="XlsWriter.java" line="31"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsWriter"
+             timestamp="1660827403693" level="INFO" thread="main">
+  <log4j:message>writing to excel was success</log4j:message>
+  <log4j:locationInfo class="io.XlsWriter"
+                      method="writeXlsStatistic" file="XlsWriter.java" line="89"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsWriter"
+             timestamp="1660827403712" level="INFO" thread="main">
+  <log4j:message>XML marshalling started</log4j:message>
+  <log4j:locationInfo class="io.XmlWriter"
+                      method="generateXmlReq" file="XmlWriter.java" line="26"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsWriter"
+             timestamp="1660827403720" level="WARN" thread="main">
+  <log4j:message>XML marshalling failed</log4j:message>
+  <log4j:throwable><![CDATA[	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:269)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:412)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at io.XmlWriter.generateXmlReq(XmlWriter.java:28)
+	at Boot.main(Boot.java:102)
+]]></log4j:throwable>
+  <log4j:locationInfo class="io.XmlWriter"
+                      method="generateXmlReq" file="XmlWriter.java" line="44"/>
+
+</log4j:event>
+
+<log4j:event logger="Boot"
+             timestamp="1660827403720" level="INFO" thread="main">
+  <log4j:message>app finished without mess</log4j:message>
+  <log4j:locationInfo class="Boot"
+                      method="main" file="Boot.java" line="104"/>
+
+</log4j:event>
+
+<log4j:event logger="Boot"
+             timestamp="1660827883200" level="INFO" thread="main">
+  <log4j:message>App  started</log4j:message>
+  <log4j:locationInfo class="Boot"
+                      method="main" file="Boot.java" line="37"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsReader"
+             timestamp="1660827883222" level="INFO" thread="main">
+  <log4j:message>method readXlsUniversities was started</log4j:message>
+  <log4j:locationInfo class="io.XlsReader"
+                      method="readXlsUniversities" file="XlsReader.java" line="29"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsReader"
+             timestamp="1660827883647" level="INFO" thread="main">
+  <log4j:message>reading from excel was success</log4j:message>
+  <log4j:locationInfo class="io.XlsReader"
+                      method="readXlsUniversities" file="XlsReader.java" line="61"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsReader"
+             timestamp="1660827883652" level="INFO" thread="main">
+  <log4j:message>method readXlsStudents was started</log4j:message>
+  <log4j:locationInfo class="io.XlsReader"
+                      method="readXlsStudents" file="XlsReader.java" line="69"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsReader"
+             timestamp="1660827883679" level="INFO" thread="main">
+  <log4j:message>reading from excel was success</log4j:message>
+  <log4j:locationInfo class="io.XlsReader"
+                      method="readXlsStudents" file="XlsReader.java" line="99"/>
+
+</log4j:event>
+
+<log4j:event logger="Boot"
+             timestamp="1660827883718" level="DEBUG" thread="main">
+  <log4j:message>students Json looks like: [
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Иванов И. А.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0002-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 2,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.0
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Козлов М. В.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0002-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 2,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.6
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Фёдоров А. И.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0002-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 3,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.2
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Игнатьев М. М.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0003-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 4,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.3
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Соколов В. В.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0004-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 1,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.8
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Сидоров Е. Г.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0004-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 2,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 3.9
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Витальев В. А.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0001-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 2,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.0
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Петров П. А.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0001-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 1,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 5.0
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Алексеев С. В.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0001-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 1,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 5.0
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Иванов А. Г.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0001-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 3,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.8
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Васильев В. П.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0001-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 4,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.7
+  }
+]</log4j:message>
+  <log4j:locationInfo class="Boot"
+                      method="main" file="Boot.java" line="72"/>
+
+</log4j:event>
+
+<log4j:event logger="Boot"
+             timestamp="1660827883720" level="DEBUG" thread="main">
+  <log4j:message>universities Json looks like: [
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0001-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Московский Выдуманный Университет&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;МВУ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 1990,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;PHYSICS&quot;
+  },
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0002-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Московский Придуманный Институт&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;МПИ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 1987,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;PHYSICS&quot;
+  },
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0003-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Московский Государственный Медицинский Университет&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;МГМУ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 1960,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;MEDICINE&quot;
+  },
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0004-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Тамбовский Университет Медицины&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;ТУМ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 1995,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;MEDICINE&quot;
+  },
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0005-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Самарский Медицинский Институт&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;СМИ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 1936,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;MEDICINE&quot;
+  },
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0006-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Воронежский Литературно-Переводческий Университет&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;ВЛПУ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 2003,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;LINGUISTICS&quot;
+  },
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0007-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Казанский Университет Вычислений&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;КУВ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 1989,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;MATHEMATICS&quot;
+  }
+]</log4j:message>
+  <log4j:locationInfo class="Boot"
+                      method="main" file="Boot.java" line="73"/>
+
+</log4j:event>
+
+<log4j:event logger="Boot"
+             timestamp="1660827883724" level="DEBUG" thread="main">
+  <log4j:message>результат размера коллекций студентов: true</log4j:message>
+  <log4j:locationInfo class="Boot"
+                      method="main" file="Boot.java" line="79"/>
+
+</log4j:event>
+
+<log4j:event logger="Boot"
+             timestamp="1660827883724" level="DEBUG" thread="main">
+  <log4j:message>результат размера коллекций университетов: true</log4j:message>
+  <log4j:locationInfo class="Boot"
+                      method="main" file="Boot.java" line="81"/>
+
+</log4j:event>
+
+<log4j:event logger="utils.AnalyserUtil"
+             timestamp="1660827883728" level="INFO" thread="main">
+  <log4j:message>method getherStatistic was started</log4j:message>
+  <log4j:locationInfo class="utils.AnalyserUtil"
+                      method="getherStatistic" file="AnalyserUtil.java" line="26"/>
+
+</log4j:event>
+
+<log4j:event logger="utils.AnalyserUtil"
+             timestamp="1660827883734" level="INFO" thread="main">
+  <log4j:message>getherStatistic  successfully builded statisticsList </log4j:message>
+  <log4j:locationInfo class="utils.AnalyserUtil"
+                      method="getherStatistic" file="AnalyserUtil.java" line="89"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsWriter"
+             timestamp="1660827883735" level="INFO" thread="main">
+  <log4j:message>method writeXlsStatistic was started</log4j:message>
+  <log4j:locationInfo class="io.XlsWriter"
+                      method="writeXlsStatistic" file="XlsWriter.java" line="31"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsWriter"
+             timestamp="1660827883839" level="INFO" thread="main">
+  <log4j:message>writing to excel was success</log4j:message>
+  <log4j:locationInfo class="io.XlsWriter"
+                      method="writeXlsStatistic" file="XlsWriter.java" line="89"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsWriter"
+             timestamp="1660827883848" level="INFO" thread="main">
+  <log4j:message>XML marshalling started</log4j:message>
+  <log4j:locationInfo class="io.XmlWriter"
+                      method="generateXmlReq" file="XmlWriter.java" line="26"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsWriter"
+             timestamp="1660827883856" level="WARN" thread="main">
+  <log4j:message>XML marshalling failed</log4j:message>
+  <log4j:throwable><![CDATA[	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:269)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:412)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at io.XmlWriter.generateXmlReq(XmlWriter.java:28)
+	at Boot.main(Boot.java:102)
+]]></log4j:throwable>
+  <log4j:locationInfo class="io.XmlWriter"
+                      method="generateXmlReq" file="XmlWriter.java" line="44"/>
+
+</log4j:event>
+
+<log4j:event logger="Boot"
+             timestamp="1660827883857" level="INFO" thread="main">
+  <log4j:message>app finished without mess</log4j:message>
+  <log4j:locationInfo class="Boot"
+                      method="main" file="Boot.java" line="104"/>
+
+</log4j:event>
+
+<log4j:event logger="Boot"
+             timestamp="1660828101049" level="INFO" thread="main">
+  <log4j:message>App  started</log4j:message>
+  <log4j:locationInfo class="Boot"
+                      method="main" file="Boot.java" line="37"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsReader"
+             timestamp="1660828101055" level="INFO" thread="main">
+  <log4j:message>method readXlsUniversities was started</log4j:message>
+  <log4j:locationInfo class="io.XlsReader"
+                      method="readXlsUniversities" file="XlsReader.java" line="29"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsReader"
+             timestamp="1660828101477" level="INFO" thread="main">
+  <log4j:message>reading from excel was success</log4j:message>
+  <log4j:locationInfo class="io.XlsReader"
+                      method="readXlsUniversities" file="XlsReader.java" line="61"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsReader"
+             timestamp="1660828101478" level="INFO" thread="main">
+  <log4j:message>method readXlsStudents was started</log4j:message>
+  <log4j:locationInfo class="io.XlsReader"
+                      method="readXlsStudents" file="XlsReader.java" line="69"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsReader"
+             timestamp="1660828101509" level="INFO" thread="main">
+  <log4j:message>reading from excel was success</log4j:message>
+  <log4j:locationInfo class="io.XlsReader"
+                      method="readXlsStudents" file="XlsReader.java" line="99"/>
+
+</log4j:event>
+
+<log4j:event logger="Boot"
+             timestamp="1660828101547" level="DEBUG" thread="main">
+  <log4j:message>students Json looks like: [
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Иванов И. А.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0002-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 2,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.0
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Козлов М. В.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0002-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 2,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.6
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Фёдоров А. И.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0002-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 3,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.2
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Игнатьев М. М.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0003-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 4,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.3
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Соколов В. В.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0004-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 1,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.8
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Сидоров Е. Г.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0004-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 2,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 3.9
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Витальев В. А.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0001-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 2,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.0
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Петров П. А.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0001-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 1,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 5.0
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Алексеев С. В.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0001-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 1,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 5.0
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Иванов А. Г.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0001-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 3,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.8
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Васильев В. П.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0001-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 4,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.7
+  }
+]</log4j:message>
+  <log4j:locationInfo class="Boot"
+                      method="main" file="Boot.java" line="72"/>
+
+</log4j:event>
+
+<log4j:event logger="Boot"
+             timestamp="1660828101549" level="DEBUG" thread="main">
+  <log4j:message>universities Json looks like: [
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0001-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Московский Выдуманный Университет&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;МВУ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 1990,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;PHYSICS&quot;
+  },
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0002-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Московский Придуманный Институт&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;МПИ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 1987,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;PHYSICS&quot;
+  },
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0003-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Московский Государственный Медицинский Университет&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;МГМУ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 1960,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;MEDICINE&quot;
+  },
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0004-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Тамбовский Университет Медицины&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;ТУМ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 1995,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;MEDICINE&quot;
+  },
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0005-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Самарский Медицинский Институт&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;СМИ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 1936,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;MEDICINE&quot;
+  },
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0006-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Воронежский Литературно-Переводческий Университет&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;ВЛПУ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 2003,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;LINGUISTICS&quot;
+  },
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0007-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Казанский Университет Вычислений&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;КУВ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 1989,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;MATHEMATICS&quot;
+  }
+]</log4j:message>
+  <log4j:locationInfo class="Boot"
+                      method="main" file="Boot.java" line="73"/>
+
+</log4j:event>
+
+<log4j:event logger="Boot"
+             timestamp="1660828101553" level="DEBUG" thread="main">
+  <log4j:message>результат размера коллекций студентов: true</log4j:message>
+  <log4j:locationInfo class="Boot"
+                      method="main" file="Boot.java" line="79"/>
+
+</log4j:event>
+
+<log4j:event logger="Boot"
+             timestamp="1660828101554" level="DEBUG" thread="main">
+  <log4j:message>результат размера коллекций университетов: true</log4j:message>
+  <log4j:locationInfo class="Boot"
+                      method="main" file="Boot.java" line="81"/>
+
+</log4j:event>
+
+<log4j:event logger="utils.AnalyserUtil"
+             timestamp="1660828101557" level="INFO" thread="main">
+  <log4j:message>method getherStatistic was started</log4j:message>
+  <log4j:locationInfo class="utils.AnalyserUtil"
+                      method="getherStatistic" file="AnalyserUtil.java" line="26"/>
+
+</log4j:event>
+
+<log4j:event logger="utils.AnalyserUtil"
+             timestamp="1660828101568" level="INFO" thread="main">
+  <log4j:message>getherStatistic  successfully builded statisticsList </log4j:message>
+  <log4j:locationInfo class="utils.AnalyserUtil"
+                      method="getherStatistic" file="AnalyserUtil.java" line="89"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsWriter"
+             timestamp="1660828101569" level="INFO" thread="main">
+  <log4j:message>method writeXlsStatistic was started</log4j:message>
+  <log4j:locationInfo class="io.XlsWriter"
+                      method="writeXlsStatistic" file="XlsWriter.java" line="31"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsWriter"
+             timestamp="1660828101689" level="INFO" thread="main">
+  <log4j:message>writing to excel was success</log4j:message>
+  <log4j:locationInfo class="io.XlsWriter"
+                      method="writeXlsStatistic" file="XlsWriter.java" line="89"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsWriter"
+             timestamp="1660828101698" level="INFO" thread="main">
+  <log4j:message>XML marshalling started</log4j:message>
+  <log4j:locationInfo class="io.XmlWriter"
+                      method="generateXmlReq" file="XmlWriter.java" line="26"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsWriter"
+             timestamp="1660828101710" level="WARN" thread="main">
+  <log4j:message>XML marshalling failed</log4j:message>
+  <log4j:throwable><![CDATA[	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:269)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:412)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at io.XmlWriter.generateXmlReq(XmlWriter.java:28)
+	at Boot.main(Boot.java:102)
+]]></log4j:throwable>
+  <log4j:locationInfo class="io.XmlWriter"
+                      method="generateXmlReq" file="XmlWriter.java" line="44"/>
+
+</log4j:event>
+
+<log4j:event logger="Boot"
+             timestamp="1660828101710" level="INFO" thread="main">
+  <log4j:message>app finished without mess</log4j:message>
+  <log4j:locationInfo class="Boot"
+                      method="main" file="Boot.java" line="104"/>
+
+</log4j:event>
+
+<log4j:event logger="Boot"
+             timestamp="1660828499543" level="INFO" thread="main">
+  <log4j:message>App  started</log4j:message>
+  <log4j:locationInfo class="Boot"
+                      method="main" file="Boot.java" line="37"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsReader"
+             timestamp="1660828499548" level="INFO" thread="main">
+  <log4j:message>method readXlsUniversities was started</log4j:message>
+  <log4j:locationInfo class="io.XlsReader"
+                      method="readXlsUniversities" file="XlsReader.java" line="29"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsReader"
+             timestamp="1660828499987" level="INFO" thread="main">
+  <log4j:message>reading from excel was success</log4j:message>
+  <log4j:locationInfo class="io.XlsReader"
+                      method="readXlsUniversities" file="XlsReader.java" line="61"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsReader"
+             timestamp="1660828499988" level="INFO" thread="main">
+  <log4j:message>method readXlsStudents was started</log4j:message>
+  <log4j:locationInfo class="io.XlsReader"
+                      method="readXlsStudents" file="XlsReader.java" line="69"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsReader"
+             timestamp="1660828500023" level="INFO" thread="main">
+  <log4j:message>reading from excel was success</log4j:message>
+  <log4j:locationInfo class="io.XlsReader"
+                      method="readXlsStudents" file="XlsReader.java" line="99"/>
+
+</log4j:event>
+
+<log4j:event logger="Boot"
+             timestamp="1660828500067" level="DEBUG" thread="main">
+  <log4j:message>students Json looks like: [
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Иванов И. А.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0002-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 2,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.0
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Козлов М. В.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0002-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 2,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.6
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Фёдоров А. И.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0002-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 3,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.2
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Игнатьев М. М.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0003-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 4,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.3
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Соколов В. В.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0004-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 1,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.8
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Сидоров Е. Г.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0004-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 2,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 3.9
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Витальев В. А.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0001-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 2,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.0
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Петров П. А.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0001-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 1,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 5.0
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Алексеев С. В.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0001-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 1,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 5.0
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Иванов А. Г.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0001-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 3,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.8
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Васильев В. П.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0001-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 4,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.7
+  }
+]</log4j:message>
+  <log4j:locationInfo class="Boot"
+                      method="main" file="Boot.java" line="72"/>
+
+</log4j:event>
+
+<log4j:event logger="Boot"
+             timestamp="1660828500068" level="DEBUG" thread="main">
+  <log4j:message>universities Json looks like: [
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0001-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Московский Выдуманный Университет&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;МВУ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 1990,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;PHYSICS&quot;
+  },
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0002-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Московский Придуманный Институт&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;МПИ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 1987,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;PHYSICS&quot;
+  },
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0003-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Московский Государственный Медицинский Университет&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;МГМУ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 1960,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;MEDICINE&quot;
+  },
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0004-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Тамбовский Университет Медицины&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;ТУМ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 1995,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;MEDICINE&quot;
+  },
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0005-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Самарский Медицинский Институт&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;СМИ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 1936,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;MEDICINE&quot;
+  },
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0006-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Воронежский Литературно-Переводческий Университет&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;ВЛПУ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 2003,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;LINGUISTICS&quot;
+  },
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0007-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Казанский Университет Вычислений&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;КУВ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 1989,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;MATHEMATICS&quot;
+  }
+]</log4j:message>
+  <log4j:locationInfo class="Boot"
+                      method="main" file="Boot.java" line="73"/>
+
+</log4j:event>
+
+<log4j:event logger="Boot"
+             timestamp="1660828500074" level="DEBUG" thread="main">
+  <log4j:message>результат размера коллекций студентов: true</log4j:message>
+  <log4j:locationInfo class="Boot"
+                      method="main" file="Boot.java" line="79"/>
+
+</log4j:event>
+
+<log4j:event logger="Boot"
+             timestamp="1660828500074" level="DEBUG" thread="main">
+  <log4j:message>результат размера коллекций университетов: true</log4j:message>
+  <log4j:locationInfo class="Boot"
+                      method="main" file="Boot.java" line="81"/>
+
+</log4j:event>
+
+<log4j:event logger="utils.AnalyserUtil"
+             timestamp="1660828500078" level="INFO" thread="main">
+  <log4j:message>method getherStatistic was started</log4j:message>
+  <log4j:locationInfo class="utils.AnalyserUtil"
+                      method="getherStatistic" file="AnalyserUtil.java" line="26"/>
+
+</log4j:event>
+
+<log4j:event logger="utils.AnalyserUtil"
+             timestamp="1660828500085" level="INFO" thread="main">
+  <log4j:message>getherStatistic  successfully builded statisticsList </log4j:message>
+  <log4j:locationInfo class="utils.AnalyserUtil"
+                      method="getherStatistic" file="AnalyserUtil.java" line="89"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsWriter"
+             timestamp="1660828500085" level="INFO" thread="main">
+  <log4j:message>method writeXlsStatistic was started</log4j:message>
+  <log4j:locationInfo class="io.XlsWriter"
+                      method="writeXlsStatistic" file="XlsWriter.java" line="31"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsWriter"
+             timestamp="1660828500194" level="INFO" thread="main">
+  <log4j:message>writing to excel was success</log4j:message>
+  <log4j:locationInfo class="io.XlsWriter"
+                      method="writeXlsStatistic" file="XlsWriter.java" line="89"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsWriter"
+             timestamp="1660828500208" level="INFO" thread="main">
+  <log4j:message>XML marshalling started</log4j:message>
+  <log4j:locationInfo class="io.XmlWriter"
+                      method="generateXmlReq" file="XmlWriter.java" line="26"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsWriter"
+             timestamp="1660828500221" level="WARN" thread="main">
+  <log4j:message>XML marshalling failed</log4j:message>
+  <log4j:throwable><![CDATA[	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:269)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:412)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at io.XmlWriter.generateXmlReq(XmlWriter.java:28)
+	at Boot.main(Boot.java:102)
+]]></log4j:throwable>
+  <log4j:locationInfo class="io.XmlWriter"
+                      method="generateXmlReq" file="XmlWriter.java" line="45"/>
+
+</log4j:event>
+
+<log4j:event logger="Boot"
+             timestamp="1660828500221" level="INFO" thread="main">
+  <log4j:message>app finished without mess</log4j:message>
+  <log4j:locationInfo class="Boot"
+                      method="main" file="Boot.java" line="104"/>
+
+</log4j:event>
+
+<log4j:event logger="Boot"
+             timestamp="1660828655827" level="INFO" thread="main">
+  <log4j:message>App  started</log4j:message>
+  <log4j:locationInfo class="Boot"
+                      method="main" file="Boot.java" line="37"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsReader"
+             timestamp="1660828655832" level="INFO" thread="main">
+  <log4j:message>method readXlsUniversities was started</log4j:message>
+  <log4j:locationInfo class="io.XlsReader"
+                      method="readXlsUniversities" file="XlsReader.java" line="29"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsReader"
+             timestamp="1660828656231" level="INFO" thread="main">
+  <log4j:message>reading from excel was success</log4j:message>
+  <log4j:locationInfo class="io.XlsReader"
+                      method="readXlsUniversities" file="XlsReader.java" line="61"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsReader"
+             timestamp="1660828656232" level="INFO" thread="main">
+  <log4j:message>method readXlsStudents was started</log4j:message>
+  <log4j:locationInfo class="io.XlsReader"
+                      method="readXlsStudents" file="XlsReader.java" line="69"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsReader"
+             timestamp="1660828656259" level="INFO" thread="main">
+  <log4j:message>reading from excel was success</log4j:message>
+  <log4j:locationInfo class="io.XlsReader"
+                      method="readXlsStudents" file="XlsReader.java" line="99"/>
+
+</log4j:event>
+
+<log4j:event logger="Boot"
+             timestamp="1660828656297" level="DEBUG" thread="main">
+  <log4j:message>students Json looks like: [
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Иванов И. А.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0002-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 2,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.0
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Козлов М. В.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0002-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 2,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.6
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Фёдоров А. И.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0002-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 3,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.2
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Игнатьев М. М.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0003-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 4,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.3
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Соколов В. В.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0004-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 1,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.8
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Сидоров Е. Г.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0004-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 2,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 3.9
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Витальев В. А.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0001-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 2,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.0
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Петров П. А.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0001-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 1,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 5.0
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Алексеев С. В.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0001-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 1,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 5.0
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Иванов А. Г.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0001-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 3,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.8
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Васильев В. П.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0001-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 4,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.7
+  }
+]</log4j:message>
+  <log4j:locationInfo class="Boot"
+                      method="main" file="Boot.java" line="72"/>
+
+</log4j:event>
+
+<log4j:event logger="Boot"
+             timestamp="1660828656299" level="DEBUG" thread="main">
+  <log4j:message>universities Json looks like: [
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0001-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Московский Выдуманный Университет&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;МВУ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 1990,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;PHYSICS&quot;
+  },
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0002-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Московский Придуманный Институт&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;МПИ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 1987,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;PHYSICS&quot;
+  },
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0003-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Московский Государственный Медицинский Университет&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;МГМУ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 1960,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;MEDICINE&quot;
+  },
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0004-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Тамбовский Университет Медицины&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;ТУМ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 1995,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;MEDICINE&quot;
+  },
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0005-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Самарский Медицинский Институт&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;СМИ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 1936,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;MEDICINE&quot;
+  },
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0006-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Воронежский Литературно-Переводческий Университет&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;ВЛПУ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 2003,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;LINGUISTICS&quot;
+  },
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0007-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Казанский Университет Вычислений&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;КУВ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 1989,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;MATHEMATICS&quot;
+  }
+]</log4j:message>
+  <log4j:locationInfo class="Boot"
+                      method="main" file="Boot.java" line="73"/>
+
+</log4j:event>
+
+<log4j:event logger="Boot"
+             timestamp="1660828656304" level="DEBUG" thread="main">
+  <log4j:message>результат размера коллекций студентов: true</log4j:message>
+  <log4j:locationInfo class="Boot"
+                      method="main" file="Boot.java" line="79"/>
+
+</log4j:event>
+
+<log4j:event logger="Boot"
+             timestamp="1660828656304" level="DEBUG" thread="main">
+  <log4j:message>результат размера коллекций университетов: true</log4j:message>
+  <log4j:locationInfo class="Boot"
+                      method="main" file="Boot.java" line="81"/>
+
+</log4j:event>
+
+<log4j:event logger="utils.AnalyserUtil"
+             timestamp="1660828656307" level="INFO" thread="main">
+  <log4j:message>method getherStatistic was started</log4j:message>
+  <log4j:locationInfo class="utils.AnalyserUtil"
+                      method="getherStatistic" file="AnalyserUtil.java" line="26"/>
+
+</log4j:event>
+
+<log4j:event logger="utils.AnalyserUtil"
+             timestamp="1660828656313" level="INFO" thread="main">
+  <log4j:message>getherStatistic  successfully builded statisticsList </log4j:message>
+  <log4j:locationInfo class="utils.AnalyserUtil"
+                      method="getherStatistic" file="AnalyserUtil.java" line="89"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsWriter"
+             timestamp="1660828656313" level="INFO" thread="main">
+  <log4j:message>method writeXlsStatistic was started</log4j:message>
+  <log4j:locationInfo class="io.XlsWriter"
+                      method="writeXlsStatistic" file="XlsWriter.java" line="31"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsWriter"
+             timestamp="1660828656410" level="INFO" thread="main">
+  <log4j:message>writing to excel was success</log4j:message>
+  <log4j:locationInfo class="io.XlsWriter"
+                      method="writeXlsStatistic" file="XlsWriter.java" line="89"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsWriter"
+             timestamp="1660828656416" level="INFO" thread="main">
+  <log4j:message>XML marshalling started</log4j:message>
+  <log4j:locationInfo class="io.XmlWriter"
+                      method="generateXmlReq" file="XmlWriter.java" line="27"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsWriter"
+             timestamp="1660828656424" level="WARN" thread="main">
+  <log4j:message>XML marshalling failed</log4j:message>
+  <log4j:throwable><![CDATA[	at javax.xml.bind.ContextFinder.newInstance(ContextFinder.java:269)
+	at javax.xml.bind.ContextFinder.find(ContextFinder.java:412)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:721)
+	at javax.xml.bind.JAXBContext.newInstance(JAXBContext.java:662)
+	at io.XmlWriter.generateXmlReq(XmlWriter.java:29)
+	at Boot.main(Boot.java:102)
+]]></log4j:throwable>
+  <log4j:locationInfo class="io.XmlWriter"
+                      method="generateXmlReq" file="XmlWriter.java" line="46"/>
+
+</log4j:event>
+
+<log4j:event logger="Boot"
+             timestamp="1660828656424" level="INFO" thread="main">
+  <log4j:message>app finished without mess</log4j:message>
+  <log4j:locationInfo class="Boot"
+                      method="main" file="Boot.java" line="104"/>
+
+</log4j:event>
+
+<log4j:event logger="Boot"
+             timestamp="1660828903702" level="INFO" thread="main">
+  <log4j:message>App  started</log4j:message>
+  <log4j:locationInfo class="Boot"
+                      method="main" file="Boot.java" line="37"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsReader"
+             timestamp="1660828903726" level="INFO" thread="main">
+  <log4j:message>method readXlsUniversities was started</log4j:message>
+  <log4j:locationInfo class="io.XlsReader"
+                      method="readXlsUniversities" file="XlsReader.java" line="29"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsReader"
+             timestamp="1660828904170" level="INFO" thread="main">
+  <log4j:message>reading from excel was success</log4j:message>
+  <log4j:locationInfo class="io.XlsReader"
+                      method="readXlsUniversities" file="XlsReader.java" line="61"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsReader"
+             timestamp="1660828904179" level="INFO" thread="main">
+  <log4j:message>method readXlsStudents was started</log4j:message>
+  <log4j:locationInfo class="io.XlsReader"
+                      method="readXlsStudents" file="XlsReader.java" line="69"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsReader"
+             timestamp="1660828904211" level="INFO" thread="main">
+  <log4j:message>reading from excel was success</log4j:message>
+  <log4j:locationInfo class="io.XlsReader"
+                      method="readXlsStudents" file="XlsReader.java" line="99"/>
+
+</log4j:event>
+
+<log4j:event logger="Boot"
+             timestamp="1660828904251" level="DEBUG" thread="main">
+  <log4j:message>students Json looks like: [
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Иванов И. А.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0002-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 2,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.0
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Козлов М. В.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0002-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 2,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.6
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Фёдоров А. И.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0002-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 3,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.2
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Игнатьев М. М.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0003-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 4,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.3
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Соколов В. В.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0004-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 1,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.8
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Сидоров Е. Г.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0004-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 2,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 3.9
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Витальев В. А.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0001-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 2,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.0
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Петров П. А.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0001-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 1,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 5.0
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Алексеев С. В.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0001-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 1,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 5.0
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Иванов А. Г.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0001-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 3,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.8
+  },
+  {
+    &quot;РџРѕР»РЅРѕРµ РёРјСЏ&quot;: &quot;Васильев В. П.&quot;,
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІСѓР·Р°&quot;: &quot;0001-high&quot;,
+    &quot;С‚РµРєСѓС‰РёР№ РєСѓСЂСЃ СѓС‡Р°С‰РµРіРѕСЃСЏ&quot;: 4,
+    &quot;СЃСЂРµРґРЅСЏСЏ РѕС†РµРЅРєР°&quot;: 4.7
+  }
+]</log4j:message>
+  <log4j:locationInfo class="Boot"
+                      method="main" file="Boot.java" line="72"/>
+
+</log4j:event>
+
+<log4j:event logger="Boot"
+             timestamp="1660828904253" level="DEBUG" thread="main">
+  <log4j:message>universities Json looks like: [
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0001-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Московский Выдуманный Университет&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;МВУ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 1990,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;PHYSICS&quot;
+  },
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0002-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Московский Придуманный Институт&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;МПИ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 1987,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;PHYSICS&quot;
+  },
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0003-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Московский Государственный Медицинский Университет&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;МГМУ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 1960,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;MEDICINE&quot;
+  },
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0004-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Тамбовский Университет Медицины&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;ТУМ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 1995,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;MEDICINE&quot;
+  },
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0005-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Самарский Медицинский Институт&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;СМИ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 1936,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;MEDICINE&quot;
+  },
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0006-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Воронежский Литературно-Переводческий Университет&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;ВЛПУ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 2003,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;LINGUISTICS&quot;
+  },
+  {
+    &quot;РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ&quot;: &quot;0007-high&quot;,
+    &quot;РџРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;Казанский Университет Вычислений&quot;,
+    &quot;СЃРѕРєСЂР°С‰С‘РЅРЅРѕРµ РЅР°Р·РІР°РЅРёРµ&quot;: &quot;КУВ&quot;,
+    &quot;РіРѕРґ РѕСЃРЅРѕРІР°РЅРёСЏ&quot;: 1989,
+    &quot;РЅР°РїСЂР°РІР»РµРЅРЅРѕСЃС‚СЊ&quot;: &quot;MATHEMATICS&quot;
+  }
+]</log4j:message>
+  <log4j:locationInfo class="Boot"
+                      method="main" file="Boot.java" line="73"/>
+
+</log4j:event>
+
+<log4j:event logger="Boot"
+             timestamp="1660828904258" level="DEBUG" thread="main">
+  <log4j:message>результат размера коллекций студентов: true</log4j:message>
+  <log4j:locationInfo class="Boot"
+                      method="main" file="Boot.java" line="79"/>
+
+</log4j:event>
+
+<log4j:event logger="Boot"
+             timestamp="1660828904258" level="DEBUG" thread="main">
+  <log4j:message>результат размера коллекций университетов: true</log4j:message>
+  <log4j:locationInfo class="Boot"
+                      method="main" file="Boot.java" line="81"/>
+
+</log4j:event>
+
+<log4j:event logger="utils.AnalyserUtil"
+             timestamp="1660828904262" level="INFO" thread="main">
+  <log4j:message>method getherStatistic was started</log4j:message>
+  <log4j:locationInfo class="utils.AnalyserUtil"
+                      method="getherStatistic" file="AnalyserUtil.java" line="26"/>
+
+</log4j:event>
+
+<log4j:event logger="utils.AnalyserUtil"
+             timestamp="1660828904273" level="INFO" thread="main">
+  <log4j:message>getherStatistic  successfully builded statisticsList </log4j:message>
+  <log4j:locationInfo class="utils.AnalyserUtil"
+                      method="getherStatistic" file="AnalyserUtil.java" line="89"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsWriter"
+             timestamp="1660828904274" level="INFO" thread="main">
+  <log4j:message>method writeXlsStatistic was started</log4j:message>
+  <log4j:locationInfo class="io.XlsWriter"
+                      method="writeXlsStatistic" file="XlsWriter.java" line="31"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsWriter"
+             timestamp="1660828904422" level="INFO" thread="main">
+  <log4j:message>writing to excel was success</log4j:message>
+  <log4j:locationInfo class="io.XlsWriter"
+                      method="writeXlsStatistic" file="XlsWriter.java" line="89"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsWriter"
+             timestamp="1660828904440" level="INFO" thread="main">
+  <log4j:message>XML marshalling started</log4j:message>
+  <log4j:locationInfo class="io.XmlWriter"
+                      method="generateXmlReq" file="XmlWriter.java" line="27"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsWriter"
+             timestamp="1660828904575" level="INFO" thread="main">
+  <log4j:message>Directory created successfully</log4j:message>
+  <log4j:locationInfo class="io.XmlWriter"
+                      method="generateXmlReq" file="XmlWriter.java" line="38"/>
+
+</log4j:event>
+
+<log4j:event logger="io.XlsWriter"
+             timestamp="1660828904582" level="INFO" thread="main">
+  <log4j:message>XML marshalling finished successfully</log4j:message>
+  <log4j:locationInfo class="io.XmlWriter"
+                      method="generateXmlReq" file="XmlWriter.java" line="50"/>
+
+</log4j:event>
+
+<log4j:event logger="Boot"
+             timestamp="1660828904582" level="INFO" thread="main">
+  <log4j:message>app finished without mess</log4j:message>
+  <log4j:locationInfo class="Boot"
+                      method="main" file="Boot.java" line="104"/>
+
+</log4j:event>
+
